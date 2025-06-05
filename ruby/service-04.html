@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry Pickup & Delivery - DormEase</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .service-header {
+            background-color: #0dcaf0;
+            padding: 5rem 0;
+            margin-bottom: 2rem;
+        }
+
+        .feature-icon {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 0.75rem;
+            background-color: #0dcaf0;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        .feature-icon i {
+            font-size: 1.5rem;
+        }
+
+        .footer {
+            background-color: #212529;
+            color: #fff;
+            padding: 3rem 0;
+            margin-top: 3rem;
+        }
+
+        .footer a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">DormEase</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="service-01.html">On-Demand Task Running</a></li>
+                            <li><a class="dropdown-item" href="service-02.html">Delivery Services</a></li>
+                            <li><a class="dropdown-item" href="service-03.html">Print & Copy Services</a></li>
+                            <li><a class="dropdown-item active" href="service-04.html">Laundry Pickup & Delivery</a></li>
+                            <li><a class="dropdown-item" href="service-05.html">Tech Borrowing & Charging</a></li>
+                            <li><a class="dropdown-item" href="service-06.html">Campus Shopping Assistance</a></li>
+                            <li><a class="dropdown-item" href="service-07.html">Roommate Assistance</a></li>
+                            <li><a class="dropdown-item" href="service-08.html">Event Assistance</a></li>
+                            <li><a class="dropdown-item" href="service-09.html">Emergency Help Service</a></li>
+                            <li><a class="dropdown-item" href="service-10.html">Peer-to-Peer Item Exchange</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex ms-3">
+                    <button class="btn btn-outline-light" type="button">Login</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Service Header -->
+    <header class="service-header text-white text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Laundry Pickup & Delivery</h1>
+            <p class="lead">Convenient laundry service with pickup and delivery right to your dorm room.</p>
+            <div class="d-inline-flex align-items-center">
+                <span class="badge bg-light text-info me-2">Service 04</span>
+                <span><i class="bi bi-basket me-1"></i> Clean & Fresh</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- Service Overview -->
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Convenient Laundry Solutions</h2>
+                        <p class="lead">Never worry about laundry day again! We pick up your dirty clothes and deliver them back clean, folded, and ready to wear.</p>
+
+                        <div class="row g-4 py-4">
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <div class="feature-icon">
+                                            <i class="bi bi-water"></i>
+                                        </div>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h5>Wash & Fold</h5>
+                                        <p>Regular washing, drying, and professional folding service.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <div class="feature-icon">
+                                            <i class="bi bi-suit-spade"></i>
+                                        </div>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h5>Dry Cleaning</h5>
+                                        <p>Professional dry cleaning for delicate and special items.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <div class="feature-icon">
+                                            <i class="bi bi-lightning-charge"></i>
+                                        </div>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h5>Express Service</h5>
+                                        <p>Same-day or next-day delivery options for urgent needs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <div class="feature-icon">
+                                            <i class="bi bi-heart"></i>
+                                        </div>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h5>Special Care</h5>
+                                        <p>Delicate fabrics and special washing instructions handled with care.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- How It Works -->
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">How It Works</h2>
+                        <div class="row g-4 py-3">
+                            <div class="col-md-3 text-center">
+                                <div class="rounded-circle bg-info bg-opacity-10 d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 80px; height: 80px;">
+                                    <h3 class="text-info mb-0">1</h3>
+                                </div>
+                                <h5>Schedule Pickup</h5>
+                                <p class="text-muted">Schedule a pickup time that works for you</p>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <div class="rounded-circle bg-info bg-opacity-10 d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 80px; height: 80px;">
+                                    <h3 class="text-info mb-0">2</h3>
+                                </div>
+                                <h5>We Collect</h5>
+                                <p class="text-muted">We collect your laundry from your dorm or location</p>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <div class="rounded-circle bg-info bg-opacity-10 d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 80px; height: 80px;">
+                                    <h3 class="text-info mb-0">3</h3>
+                                </div>
+                                <h5>Professional Wash</h5>
+                                <p class="text-muted">Professional washing and folding at our facility</p>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <div class="rounded-circle bg-info bg-opacity-10 d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 80px; height: 80px;">
+                                    <h3 class="text-info mb-0">4</h3>
+                                </div>
+                                <h5>Delivery</h5>
+                                <p class="text-muted">Clean clothes delivered back to you</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pricing -->
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title">Pricing & Plans</h2>
+                        <div class="row mt-4">
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-info h-100">
+                                    <div class="card-header bg-info text-white text-center">
+                                        <h4>Basic Plan</h4>
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h2 class="text-info">$1.50<small class="text-muted">/lb</small></h2>
+                                        <ul class="list-unstyled mt-3">
+                                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Wash & Fold</li>
+                                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Standard detergent</li>
+                                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> 48-hour turnaround</li>
+                                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Free pickup & delivery</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-warning h-100">
+                                    <div class="card-header bg-warning text-dark text-center">
+                                        <h4>Premium Plan</h4>
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h2 class="text-warning">$2.00<small class="text-muted">/lb</small></h2>
+                                        <ul class="list-unstyled mt-3">
+                                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Wash & Fold</li>
+                                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Premium detergent</li>
+                                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> 24-hour turnaround</li>
+                                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Fabric softener included</li>
+                                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Special care instructions</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-success h-100">
+                                    <div class="card-header bg-success text-white text-center">
+                                        <h4>Express Plan</h4>
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h2 class="text-success">$3.00<small class="text-muted">/lb</small></h2>
+                                        <ul class="list-unstyled mt-3">
+                                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Same-day service</li>
+                                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Premium detergent</li>
+                                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Priority processing</li>
+                                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Stain treatment</li>
+                                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Dry cleaning discount</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-info mt-4">
+                            <h5><i class="bi bi-info-circle me-2"></i>Additional Services</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>• Dry cleaning: Starting at $5 per item</li>
+                                        <li>• Comforter cleaning: $15 each</li>
+                                        <li>• Shoe cleaning: $8 per pair</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>• Alterations: Quote on request</li>
+                                        <li>• Stain removal: $3 per item</li>
+                                        <li>• Ironing service: $2 per item</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <!-- Schedule Pickup Form -->
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-info text-white">
+                        <h4 class="mb-0">Schedule Pickup</h4>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="serviceType" class="form-label">Service Type</label>
+                                <select class="form-select" id="serviceType" required>
+                                    <option value="" selected disabled>Select service...</option>
+                                    <option value="basic">Basic Plan ($1.50/lb)</option>
+                                    <option value="premium">Premium Plan ($2.00/lb)</option>
+                                    <option value="express">Express Plan ($3.00/lb)</option>
+                                    <option value="dry-clean">Dry Cleaning</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="pickupDate" class="form-label">Pickup Date</label>
+                                <input type="date" class="form-control" id="pickupDate" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="pickupTime" class="form-label">Pickup Time</label>
+                                <select class="form-select" id="pickupTime" required>
+                                    <option value="" selected disabled>Select time...</option>
+                                    <option value="morning">Morning (8AM - 12PM)</option>
+                                    <option value="afternoon">Afternoon (12PM - 5PM)</option>
+                                    <option value="evening">Evening (5PM - 8PM)</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="location" class="form-label">Pickup Location</label>
+                                <input type="text" class="form-control" id="location" placeholder="Dorm name and room number" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="estimatedWeight" class="form-label">Estimated Weight (lbs)</label>
+                                <select class="form-select" id="estimatedWeight" required>
+                                    <option value="" selected disabled>Estimate weight...</option>
+                                    <option value="5-10">5-10 lbs</option>
+                                    <option value="10-15">10-15 lbs</option>
+                                    <option value="15-20">15-20 lbs</option>
+                                    <option value="20+">20+ lbs</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="specialInstructions" class="form-label">Special Instructions</label>
+                                <textarea class="form-control" id="specialInstructions" rows="2" placeholder="Any special care instructions..."></textarea>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-info btn-lg">Schedule Pickup</button>
+                            </div>
+                            <p class="text-center text-muted mt-3 mb-0"><small>Minimum order: 5 lbs</small></p>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Testimonial -->
+                <div class="card shadow-sm border-info border-top border-4">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                        <p class="fst-italic mb-3">"This service is amazing! My clothes come back cleaner than when I do them myself, and the folding is perfect. It saves me so much time every week!"</p>
+                        <div class="d-flex align-items-center">
+                            <div class="flex-shrink-0">
+                                <div class="bg-info rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                    <span class="text-white fw-bold">EM</span>
+                                </div>
+                            </div>
+                            <div class="ms-3">
+                                <h6 class="mb-0">Emma M.</h6>
+                                <small class="text-muted">Junior, Pre-Med</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-3">DormEase</h5>
+                    <p class="text-muted">Making student life easier, one service at a time. Your trusted campus companion for all your needs.</p>
+                    <div class="d-flex mt-3">
+                        <a href="#" class="me-3"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#" class="me-3"><i class="bi bi-twitter-x fs-5"></i></a>
+                        <a href="#" class="me-3"><i class="bi bi-instagram fs-5"></i></a>
+                        <a href="#"><i class="bi bi-linkedin fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html">Home</a></li>
+                        <li class="mb-2"><a href="#">About Us</a></li>
+                        <li class="mb-2"><a href="#">Services</a></li>
+                        <li class="mb-2"><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white mb-3">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="service-01.html">Task Running</a></li>
+                        <li class="mb-2"><a href="service-02.html">Delivery</a></li>
+                        <li class="mb-2"><a href="service-03.html">Print & Copy</a></li>
+                        <li class="mb-2"><a href="service-04.html">Laundry</a></li>
+                        <li><a href="service-05.html">Tech Borrowing</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-3">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i> 123 Campus Drive, University City</li>
+                        <li class="mb-2"><i class="bi bi-telephone me-2"></i> (555) 123-4567</li>
+                        <li class="mb-2"><i class="bi bi-envelope me-2"></i> info@campusservices.com</li>
+                        <li><i class="bi bi-clock me-2"></i> Mon-Fri: 8am-8pm, Sat: 9am-5pm</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small text-muted mb-0">&copy; 2025 DormEase. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#" class="small">Privacy Policy</a></li>
+                        <li class="list-inline-item"><span class="text-muted mx-2">|</span></li>
+                        <li class="list-inline-item"><a href="#" class="small">Terms of Use</a></li>
+                        <li class="list-inline-item"><span class="text-muted mx-2">|</span></li>
+                        <li class="list-inline-item"><a href="#" class="small">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

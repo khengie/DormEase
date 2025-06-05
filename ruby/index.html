@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DormEase</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --bs-primary-rgb: 13, 110, 253;
+            --bs-secondary-rgb: 108, 117, 125;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .service-card {
+            height: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            border-top: 4px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .service-01 { border-top-color: #0d6efd; }
+        .service-02 { border-top-color: #198754; }
+        .service-03 { border-top-color: #6f42c1; }
+        .service-04 { border-top-color: #0dcaf0; }
+        .service-05 { border-top-color: #fd7e14; }
+        .service-06 { border-top-color: #d63384; }
+        .service-07 { border-top-color: #20c997; }
+        .service-08 { border-top-color: #6610f2; }
+        .service-09 { border-top-color: #dc3545; }
+        .service-10 { border-top-color: #6c757d; }
+
+        .service-number {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #6c757d;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, rgba(13,110,253,0.8) 0%, rgba(111,66,193,0.8) 100%), url('/placeholder.svg?height=600&width=1200');
+            background-size: cover;
+            background-position: center;
+            padding: 6rem 0;
+            margin-bottom: 2rem;
+        }
+
+        .hero h1 {
+            font-weight: 700;
+        }
+
+        .footer {
+            background-color: #212529;
+            color: #fff;
+            padding: 3rem 0;
+            margin-top: 3rem;
+        }
+
+        .footer a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">DormEase</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="service-01.html">On-Demand Task Running</a></li>
+                            <li><a class="dropdown-item" href="service-02.html">Delivery Services</a></li>
+                            <li><a class="dropdown-item" href="service-03.html">Print & Copy Services</a></li>
+                            <li><a class="dropdown-item" href="service-04.html">Laundry Pickup & Delivery</a></li>
+                            <li><a class="dropdown-item" href="service-05.html">Tech Borrowing & Charging</a></li>
+                            <li><a class="dropdown-item" href="service-06.html">Campus Shopping Assistance</a></li>
+                            <li><a class="dropdown-item" href="service-07.html">Roommate Assistance</a></li>
+                            <li><a class="dropdown-item" href="service-08.html">Event Assistance</a></li>
+                            <li><a class="dropdown-item" href="service-09.html">Emergency Help Service</a></li>
+                            <li><a class="dropdown-item" href="service-10.html">Peer-to-Peer Item Exchange</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex ms-3">
+                    <button class="btn btn-outline-light" type="button">Login</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-white text-center">
+        <div class="container">
+            <h1 class="display-4 mb-4">Your DormEase Hub</h1>
+            <p class="lead mb-5">One-stop solution for all your campus needs. Making student life easier, one service at a time.</p>
+            <a href="#services" class="btn btn-light btn-lg px-4 me-md-2">Explore Services</a>
+            <a href="#" class="btn btn-outline-light btn-lg px-4">Sign Up</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Our Services</h2>
+                <p class="lead text-muted">Browse through our comprehensive range of campus services</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Service 01 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm service-card service-01 h-100">
+                        <div class="card-body">
+                            <div class="service-number mb-2">Service 01</div>
+                            <h5 class="card-title">On-Demand Task Running</h5>
+                            <p class="card-text">Quick errands and tasks completed by our reliable runners when you're too busy with studies.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="btn-group">
+                                    <a href="service-01.html" class="btn btn-sm btn-outline-primary">Learn More</a>
+                                </div>
+                                <small class="text-muted"><i class="bi bi-clock"></i> Available 24/7</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 02 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm service-card service-02 h-100">
+                        <div class="card-body">
+                            <div class="service-number mb-2">Service 02</div>
+                            <h5 class="card-title">Delivery Services</h5>
+                            <p class="card-text">Fast and reliable delivery of food, packages, and personal items across campus.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="btn-group">
+                                    <a href="service-02.html" class="btn btn-sm btn-outline-success">Learn More</a>
+                                </div>
+                                <small class="text-muted"><i class="bi bi-truck"></i> Fast Delivery</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 03 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm service-card service-03 h-100">
+                        <div class="card-body">
+                            <div class="service-number mb-2">Service 03</div>
+                            <h5 class="card-title">Print & Copy Services</h5>
+                            <p class="card-text">High-quality printing, copying, and binding services for all your academic needs.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="btn-group">
+                                    <a href="service-03.html" class="btn btn-sm btn-outline-secondary">Learn More</a>
+                                </div>
+                                <small class="text-muted"><i class="bi bi-printer"></i> Professional Quality</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 04 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm service-card service-04 h-100">
+                        <div class="card-body">
+                            <div class="service-number mb-2">Service 04</div>
+                            <h5 class="card-title">Laundry Pickup & Delivery</h5>
+                            <p class="card-text">Convenient laundry service with pickup and delivery right to your dorm room.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="btn-group">
+                                    <a href="service-04.html" class="btn btn-sm btn-outline-info">Learn More</a>
+                                </div>
+                                <small class="text-muted"><i class="bi bi-basket"></i> Clean & Fresh</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 05 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm service-card service-05 h-100">
+                        <div class="card-body">
+                            <div class="service-number mb-2">Service 05</div>
+                            <h5 class="card-title">Tech Borrowing & Charging</h5>
+                            <p class="card-text">Borrow tech equipment and access charging stations when you need them most.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="btn-group">
+                                    <a href="service-05.html" class="btn btn-sm btn-outline-warning">Learn More</a>
+                                </div>
+                                <small class="text-muted"><i class="bi bi-laptop"></i> Latest Tech</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 06 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm service-card service-06 h-100">
+                        <div class="card-body">
+                            <div class="service-number mb-2">Service 06</div>
+                            <h5 class="card-title">Campus Shopping Assistance</h5>
+                            <p class="card-text">Personal shopping service for groceries, supplies, and other essentials.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="btn-group">
+                                    <a href="service-06.html" class="btn btn-sm btn-outline-danger">Learn More</a>
+                                </div>
+                                <small class="text-muted"><i class="bi bi-cart"></i> Personalized Shopping</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 07 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm service-card service-07 h-100">
+                        <div class="card-body">
+                            <div class="service-number mb-2">Service 07</div>
+                            <h5 class="card-title">Roommate Assistance & Household Tasks</h5>
+                            <p class="card-text">Help with cleaning, organization, and roommate coordination for better living.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="btn-group">
+                                    <a href="service-07.html" class="btn btn-sm btn-outline-success">Learn More</a>
+                                </div>
+                                <small class="text-muted"><i class="bi bi-house"></i> Better Living</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 08 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm service-card service-08 h-100">
+                        <div class="card-body">
+                            <div class="service-number mb-2">Service 08</div>
+                            <h5 class="card-title">Event Assistance</h5>
+                            <p class="card-text">Comprehensive support for planning and executing campus events of all sizes.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="btn-group">
+                                    <a href="service-08.html" class="btn btn-sm btn-outline-primary">Learn More</a>
+                                </div>
+                                <small class="text-muted"><i class="bi bi-calendar-event"></i> Memorable Events</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 09 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm service-card service-09 h-100">
+                        <div class="card-body">
+                            <div class="service-number mb-2">Service 09</div>
+                            <h5 class="card-title">Emergency Help Service</h5>
+                            <p class="card-text">24/7 assistance for non-life-threatening emergencies and urgent situations.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="btn-group">
+                                    <a href="service-09.html" class="btn btn-sm btn-outline-danger">Learn More</a>
+                                </div>
+                                <small class="text-muted"><i class="bi bi-exclamation-circle"></i> Always Available</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 10 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm service-card service-10 h-100">
+                        <div class="card-body">
+                            <div class="service-number mb-2">Service 10</div>
+                            <h5 class="card-title">Peer-to-Peer Item Exchange</h5>
+                            <p class="card-text">Buy, sell, trade, or borrow items from fellow students in a safe environment.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="btn-group">
+                                    <a href="service-10.html" class="btn btn-sm btn-outline-secondary">Learn More</a>
+                                </div>
+                                <small class="text-muted"><i class="bi bi-arrow-left-right"></i> Community Exchange</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-3">Why Choose Our Services?</h2>
+                    <p class="lead mb-4">We're dedicated to making campus life easier and more convenient for all students.</p>
+                    <div class="d-flex mb-3">
+                        <div class="flex-shrink-0">
+                            <i class="bi bi-check-circle-fill text-primary fs-4"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h5>Reliable & Trustworthy</h5>
+                            <p>All our service providers are verified students or staff members.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <div class="flex-shrink-0">
+                            <i class="bi bi-clock-fill text-primary fs-4"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h5>Time-Saving Solutions</h5>
+                            <p>Focus on your studies while we handle the rest.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <div class="flex-shrink-0">
+                            <i class="bi bi-shield-check text-primary fs-4"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h5>Safe & Secure</h5>
+                            <p>Your safety and security are our top priorities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow">
+                        <div class="card-body p-4">
+                            <h3 class="card-title mb-4">Get Started Today</h3>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="service" class="form-label">Service Interested In</label>
+                                    <select class="form-select" id="service">
+                                        <option selected>Choose a service...</option>
+                                        <option value="1">On-Demand Task Running</option>
+                                        <option value="2">Delivery Services</option>
+                                        <option value="3">Print & Copy Services</option>
+                                        <option value="4">Laundry Pickup & Delivery</option>
+                                        <option value="5">Tech Borrowing & Charging</option>
+                                        <option value="6">Campus Shopping Assistance</option>
+                                        <option value="7">Roommate Assistance</option>
+                                        <option value="8">Event Assistance</option>
+                                        <option value="9">Emergency Help Service</option>
+                                        <option value="10">Peer-to-Peer Item Exchange</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Request Information</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">What Students Say</h2>
+                <p class="lead text-muted">Hear from students who have used our services</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <p class="card-text">"The laundry service saved me so much time! I can focus on my studies while my laundry gets done. Highly recommend!"</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <div class="flex-shrink-0">
+                                    <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                        <span class="text-white fw-bold">JD</span>
+                                    </div>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="mb-0">Jamie D.</h6>
+                                    <small class="text-muted">Junior, Engineering</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-half text-warning"></i>
+                            </div>
+                            <p class="card-text">"The tech borrowing service was a lifesaver when my laptop crashed before a big presentation. Quick and easy process!"</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <div class="flex-shrink-0">
+                                    <div class="bg-success rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                        <span class="text-white fw-bold">MT</span>
+                                    </div>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="mb-0">Michael T.</h6>
+                                    <small class="text-muted">Senior, Business</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <p class="card-text">"The event assistance team helped make our club's annual gathering a huge success. Professional and attentive to every detail!"</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <div class="flex-shrink-0">
+                                    <div class="bg-danger rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                        <span class="text-white fw-bold">SL</span>
+                                    </div>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="mb-0">Sarah L.</h6>
+                                    <small class="text-muted">Sophomore, Arts</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-3">DormEase</h5>
+                    <p class="text-muted">Making student life easier, one service at a time. Your trusted campus companion for all your needs.</p>
+                    <div class="d-flex mt-3">
+                        <a href="#" class="me-3"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#" class="me-3"><i class="bi bi-twitter-x fs-5"></i></a>
+                        <a href="#" class="me-3"><i class="bi bi-instagram fs-5"></i></a>
+                        <a href="#"><i class="bi bi-linkedin fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html">Home</a></li>
+                        <li class="mb-2"><a href="#">About Us</a></li>
+                        <li class="mb-2"><a href="#">Services</a></li>
+                        <li class="mb-2"><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white mb-3">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="service-01.html">Task Running</a></li>
+                        <li class="mb-2"><a href="service-02.html">Delivery</a></li>
+                        <li class="mb-2"><a href="service-03.html">Print & Copy</a></li>
+                        <li class="mb-2"><a href="service-04.html">Laundry</a></li>
+                        <li><a href="service-05.html">Tech Borrowing</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-3">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i> 123 Campus Drive, University City</li>
+                        <li class="mb-2"><i class="bi bi-telephone me-2"></i> (555) 123-4567</li>
+                        <li class="mb-2"><i class="bi bi-envelope me-2"></i> info@campusservices.com</li>
+                        <li><i class="bi bi-clock me-2"></i> Mon-Fri: 8am-8pm, Sat: 9am-5pm</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small text-muted mb-0">&copy; 2025 DormEase. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#" class="small">Privacy Policy</a></li>
+                        <li class="list-inline-item"><span class="text-muted mx-2">|</span></li>
+                        <li class="list-inline-item"><a href="#" class="small">Terms of Use</a></li>
+                        <li class="list-inline-item"><span class="text-muted mx-2">|</span></li>
+                        <li class="list-inline-item"><a href="#" class="small">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
