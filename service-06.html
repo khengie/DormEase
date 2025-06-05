@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Shopping Assistance - DormEase</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .service-header {
+            background-color: #d63384;
+            padding: 5rem 0;
+            margin-bottom: 2rem;
+        }
+
+        .feature-icon {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 0.75rem;
+            background-color: #d63384;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        .feature-icon i {
+            font-size: 1.5rem;
+        }
+
+        .footer {
+            background-color: #212529;
+            color: #fff;
+            padding: 3rem 0;
+            margin-top: 3rem;
+        }
+
+        .footer a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">DormEase</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="service-01.html">On-Demand Task Running</a></li>
+                            <li><a class="dropdown-item" href="service-02.html">Delivery Services</a></li>
+                            <li><a class="dropdown-item" href="service-03.html">Print & Copy Services</a></li>
+                            <li><a class="dropdown-item" href="service-04.html">Laundry Pickup & Delivery</a></li>
+                            <li><a class="dropdown-item" href="service-05.html">Tech Borrowing & Charging</a></li>
+                            <li><a class="dropdown-item active" href="service-06.html">Campus Shopping Assistance</a></li>
+                            <li><a class="dropdown-item" href="service-07.html">Roommate Assistance</a></li>
+                            <li><a class="dropdown-item" href="service-08.html">Event Assistance</a></li>
+                            <li><a class="dropdown-item" href="service-09.html">Emergency Help Service</a></li>
+                            <li><a class="dropdown-item" href="service-10.html">Peer-to-Peer Item Exchange</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex ms-3">
+                    <button class="btn btn-outline-light" type="button">Login</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Service Header -->
+    <header class="service-header text-white text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Campus Shopping Assistance</h1>
+            <p class="lead">Personal shopping service for groceries, supplies, and other essentials.</p>
+            <div class="d-inline-flex align-items-center">
+                <span class="badge bg-light text-dark me-2">Service 06</span>
+                <span><i class="bi bi-cart me-1"></i> Personalized Shopping</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- Service Overview -->
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Personal Shopping Made Easy</h2>
+                        <p class="lead">Too busy to shop? Let us handle your shopping needs! From groceries to textbooks, we'll get what you need and deliver it right to you.</p>
+
+                        <div class="row g-4 py-4">
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <div class="feature-icon">
+                                            <i class="bi bi-basket"></i>
+                                        </div>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h5>Grocery Shopping</h5>
+                                        <p>Fresh food, snacks, and daily essentials from local stores.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <div class="feature-icon">
+                                            <i class="bi bi-book"></i>
+                                        </div>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h5>Textbook Pickup</h5>
+                                        <p>Course materials from campus bookstore and online orders.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <div class="feature-icon">
+                                            <i class="bi bi-pencil"></i>
+                                        </div>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h5>Supply Runs</h5>
+                                        <p>School supplies, dorm essentials, and personal care items.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <div class="feature-icon">
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h5>Special Requests</h5>
+                                        <p>Custom shopping for specific items, brands, or dietary needs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shopping Locations -->
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Shopping Locations</h2>
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <div class="card mb-3 border-danger">
+                                    <div class="card-header" style="background-color: #d63384; color: white;">
+                                        <h5 class="mb-0"><i class="bi bi-shop me-2"></i>On-Campus Stores</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-unstyled mb-0">
+                                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Campus bookstore</li>
+                                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Student union convenience store</li>
+                                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Campus pharmacy</li>
+                                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Coffee shops and cafes</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card mb-3 border-danger">
+                                    <div class="card-header" style="background-color: #d63384; color: white;">
+                                        <h5 class="mb-0"><i class="bi bi-building me-2"></i>Off-Campus Stores</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-unstyled mb-0">
+                                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Walmart & Target</li>
+                                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Local grocery stores</li>
+                                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> CVS & Walgreens</li>
+                                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Best Buy & electronics stores</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- How It Works -->
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title">How It Works</h2>
+                        <div class="row g-4 py-3">
+                            <div class="col-md-2 text-center">
+                                <div class="rounded-circle bg-danger bg-opacity-10 d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 60px; height: 60px;">
+                                    <h4 class="text-danger mb-0">1</h4>
+                                </div>
+                                <h6>Submit List</h6>
+                                <p class="text-muted small">Create your shopping list</p>
+                            </div>
+                            <div class="col-md-2 text-center">
+                                <div class="rounded-circle bg-danger bg-opacity-10 d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 60px; height: 60px;">
+                                    <h4 class="text-danger mb-0">2</h4>
+                                </div>
+                                <h6>Get Quote</h6>
+                                <p class="text-muted small">Receive cost estimate</p>
+                            </div>
+                            <div class="col-md-2 text-center">
+                                <div class="rounded-circle bg-danger bg-opacity-10 d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 60px; height: 60px;">
+                                    <h4 class="text-danger mb-0">3</h4>
+                                </div>
+                                <h6>We Shop</h6>
+                                <p class="text-muted small">Personal shopper gets items</p>
+                            </div>
+                            <div class="col-md-2 text-center">
+                                <div class="rounded-circle bg-danger bg-opacity-10 d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 60px; height: 60px;">
+                                    <h4 class="text-danger mb-0">4</h4>
+                                </div>
+                                <h6>Quality Check</h6>
+                                <p class="text-muted small">Items verified & packed</p>
+                            </div>
+                            <div class="col-md-2 text-center">
+                                <div class="rounded-circle bg-danger bg-opacity-10 d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 60px; height: 60px;">
+                                    <h4 class="text-danger mb-0">5</h4>
+                                </div>
+                                <h6>Delivery</h6>
+                                <p class="text-muted small">Items delivered to you</p>
+                            </div>
+                            <div class="col-md-2 text-center">
+                                <div class="rounded-circle bg-danger bg-opacity-10 d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 60px; height: 60px;">
+                                    <h4 class="text-danger mb-0">6</h4>
+                                </div>
+                                <h6>Payment</h6>
+                                <p class="text-muted small">Pay for items + service fee</p>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-info mt-4">
+                            <h5><i class="bi bi-info-circle me-2"></i>Service Fees</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>• Shopping fee: $5 base + $2 per store</li>
+                                        <li>• Delivery fee: $3 on-campus, $5 off-campus</li>
+                                        <li>• Rush service (same day): +$5</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>• Heavy items (>20 lbs): +$3</li>
+                                        <li>• Special requests: Quote on request</li>
+                                        <li>• Prescription pickup: +$2</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <!-- Shopping List Form -->
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header" style="background-color: #d63384; color: white;">
+                        <h4 class="mb-0">Start Shopping List</h4>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="shoppingType" class="form-label">Shopping Type</label>
+                                <select class="form-select" id="shoppingType" required>
+                                    <option value="" selected disabled>Select type...</option>
+                                    <option value="groceries">Groceries & Food</option>
+                                    <option value="textbooks">Textbooks & Supplies</option>
+                                    <option value="personal">Personal Care Items</option>
+                                    <option value="electronics">Electronics & Tech</option>
+                                    <option value="clothing">Clothing & Accessories</option>
+                                    <option value="mixed">Mixed Items</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="urgency" class="form-label">When do you need it?</label>
+                                <select class="form-select" id="urgency" required>
+                                    <option value="" selected disabled>Select timeframe...</option>
+                                    <option value="today">Today (Rush +$5)</option>
+                                    <option value="tomorrow">Tomorrow</option>
+                                    <option value="2-3days">2-3 Days</option>
+                                    <option value="flexible">Flexible (Best price)</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="budget" class="form-label">Estimated Budget</label>
+                                <select class="form-select" id="budget" required>
+                                    <option value="" selected disabled>Select budget range...</option>
+                                    <option value="under25">Under $25</option>
+                                    <option value="25-50">$25 - $50</option>
+                                    <option value="50-100">$50 - $100</option>
+                                    <option value="100-200">$100 - $200</option>
+                                    <option value="over200">Over $200</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="shoppingList" class="form-label">Shopping List</label>
+                                <textarea class="form-control" id="shoppingList" rows="6" placeholder="List items you need:&#10;&#10;• Item 1 (brand preference, size, etc.)&#10;• Item 2&#10;• Item 3&#10;&#10;Include any specific brands, sizes, or preferences..." required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="deliveryLocation" class="form-label">Delivery Location</label>
+                                <input type="text" class="form-control" id="deliveryLocation" placeholder="Dorm name and room number" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="specialInstructions" class="form-label">Special Instructions</label>
+                                <textarea class="form-control" id="specialInstructions" rows="2" placeholder="Dietary restrictions, substitutions, etc."></textarea>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-lg" style="background-color: #d63384; color: white;">Get Quote</button>
+                            </div>
+                            <p class="text-center text-muted mt-3 mb-0"><small>You'll receive a quote within 30 minutes</small></p>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Popular Items -->
+                <div class="card shadow-sm border-top border-4" style="border-top-color: #d63384 !important;">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="bi bi-star-fill" style="color: #d63384;"></i> Popular Items</h5>
+                        <p class="card-text">Most requested items this week:</p>
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="list-unstyled small">
+                                    <li>• Instant noodles</li>
+                                    <li>• Energy drinks</li>
+                                    <li>• Snacks & chips</li>
+                                    <li>• Toiletries</li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="list-unstyled small">
+                                    <li>• Notebooks</li>
+                                    <li>• Phone chargers</li>
+                                    <li>• Laundry detergent</li>
+                                    <li>• Coffee & tea</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="d-grid">
+                            <button class="btn btn-outline-secondary btn-sm">Quick Order Popular Items</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-3">DormEase</h5>
+                    <p class="text-muted">Making student life easier, one service at a time. Your trusted campus companion for all your needs.</p>
+                    <div class="d-flex mt-3">
+                        <a href="#" class="me-3"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#" class="me-3"><i class="bi bi-twitter-x fs-5"></i></a>
+                        <a href="#" class="me-3"><i class="bi bi-instagram fs-5"></i></a>
+                        <a href="#"><i class="bi bi-linkedin fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html">Home</a></li>
+                        <li class="mb-2"><a href="#">About Us</a></li>
+                        <li class="mb-2"><a href="#">Services</a></li>
+                        <li class="mb-2"><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white mb-3">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="service-01.html">Task Running</a></li>
+                        <li class="mb-2"><a href="service-02.html">Delivery</a></li>
+                        <li class="mb-2"><a href="service-03.html">Print & Copy</a></li>
+                        <li class="mb-2"><a href="service-04.html">Laundry</a></li>
+                        <li><a href="service-05.html">Tech Borrowing</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-3">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i> 123 Campus Drive, University City</li>
+                        <li class="mb-2"><i class="bi bi-telephone me-2"></i> (555) 123-4567</li>
+                        <li class="mb-2"><i class="bi bi-envelope me-2"></i> info@campusservices.com</li>
+                        <li><i class="bi bi-clock me-2"></i> Mon-Fri: 8am-8pm, Sat: 9am-5pm</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small text-muted mb-0">&copy; 2025 DormEase. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#" class="small">Privacy Policy</a></li>
+                        <li class="list-inline-item"><span class="text-muted mx-2">|</span></li>
+                        <li class="list-inline-item"><a href="#" class="small">Terms of Use</a></li>
+                        <li class="list-inline-item"><span class="text-muted mx-2">|</span></li>
+                        <li class="list-inline-item"><a href="#" class="small">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
